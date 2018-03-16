@@ -9,13 +9,22 @@ This wiki will be very simple, not users auth, just the ability to display pages
 
 The wiki should have the following methods:
 
+
+```
 GET /page/{{$category/..}}/{{$page}}.md
+```
 If the page does not exist, it should redirect to edit page.
+```
 GET /edit/{{$category/..}}/{{$page}}.md
+```
 Will be used to both edit or create a new page.
-POST /etc/{{$category/..}}/{{$page}}.me
+```
+POST /etc/{{$category/..}}/{{$page}}.md
+```
 Will change the page.
+```
 DELETE /etc/{{$category/..}}/{{$page}}.md
+```
 Will delete the page.
 
 You are free to choose how to want to implement this.
